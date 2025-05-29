@@ -1,212 +1,793 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nityanshu Ranawat - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'typewriter': 'typewriter 4s steps(40) infinite',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-in': 'slideIn 1s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' }
+                        },
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.5)' },
+                            '100%': { boxShadow: '0 0 40px rgba(59, 130, 246, 0.8)' }
+                        },
+                        typewriter: {
+                            '0%': { width: '0' },
+                            '50%': { width: '100%' },
+                            '100%': { width: '0' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideIn: {
+                            '0%': { transform: 'translateX(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            animation: gradient 8s ease infinite;
+            background-size: 400% 400%;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px) rotateX(5deg);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .skill-bar {
+            position: relative;
+            overflow: hidden;
+        }
+        .skill-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .shape {
+            position: absolute;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        .shape:nth-child(1) { width: 80px; height: 80px; top: 20%; left: 10%; animation-delay: 0s; }
+        .shape:nth-child(2) { width: 120px; height: 120px; top: 60%; left: 70%; animation-delay: 2s; }
+        .shape:nth-child(3) { width: 60px; height: 60px; top: 80%; left: 20%; animation-delay: 4s; }
+        .shape:nth-child(4) { width: 100px; height: 100px; top: 30%; left: 80%; animation-delay: 1s; }
+        .morphing-bg {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Nityanshu Ranawat</a>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">
+                    Nityanshu Ranawat
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass">
+            <div class="px-6 py-4 space-y-2">
+                <a href="#home" class="block hover:text-blue-400 transition-colors">Home</a>
+                <a href="#about" class="block hover:text-blue-400 transition-colors">About</a>
+                <a href="#skills" class="block hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#projects" class="block hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#contact" class="block hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Nityanshu</span><br> Full Stack Web <br>Developer </h1>
-
-                    <a href="./assets/Nityanshu_Resume.pdf" class="button" download>Get CV</a>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen hero-bg flex items-center justify-center relative">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="text-center z-10 animate-slide-up">
+            <div class="mb-8">
+                <div class="w-32 h-32 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-6 animate-glow">
+                    <i class="fas fa-code text-6xl text-white"></i>
                 </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-float">
+                Hi, I'm <span class="text-yellow-300">Nityanshu</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 animate-pulse-slow">
+                Full Stack Developer & Creative Problem Solver
+            </p>
+            <div class="space-x-4">
+                <a href="#projects" class="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all transform hover:scale-105 animate-bounce-slow">
+                    View My Work
+                </a>
+                <a href="#contact" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/nityanshu-ranawat-a0556a219/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.facebook.com/nityanshu.ranawat.7" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.instagram.com/rana_ji__31/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/nityanshu31" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <circle cx="239.5" cy="233.5" r="200" />                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/profile.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-in">
+                    <div class="glass rounded-2xl p-8 card-hover">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-400">My Journey</h3>
+                        <p class="text-gray-300 mb-4">
+                            I'm a passionate Full Stack Developer with a love for creating innovative web solutions. 
+                            My journey in programming started with curiosity and has evolved into a deep passion for 
+                            building applications that make a difference.
+                        </p>
+                        <p class="text-gray-300 mb-4">
+                            I specialize in modern web technologies and enjoy working on both frontend and backend 
+                            development. My goal is to create seamless user experiences backed by robust and 
+                            scalable server-side solutions.
+                        </p>
+                        <div class="flex space-x-4 mt-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-yellow-400">50+</div>
+                                <div class="text-sm text-gray-400">Projects</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-green-400">3+</div>
+                                <div class="text-sm text-gray-400">Years Experience</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-400">24/7</div>
+                                <div class="text-sm text-gray-400">Learning</div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Nityanshu Ranawat</h2>
-                        <p class="about__text">Hey there! I'm Nityanshu Ranawat, a CSE student currently immersing myself in the vibrant world of technology at Parul University. Web development is my playground, and I thrive on the challenges it presents. From crafting sleek user interfaces to optimizing server-side functionality, I love delving into every aspect of the full-stack experience. Every line of code is an opportunity to learn and grow, and I'm constantly honing my skills to stay ahead of the curve. Join me on this exciting journey as we explore the endless possibilities of the digital realm!
-
-
-
-
-
-
-                        </p>           
-                    </div>                                   
                 </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
+                <div class="animate-slide-up">
+                    <div class="glass rounded-2xl p-8 card-hover">
+                        <h3 class="text-2xl font-bold mb-6 text-purple-400">What I Do</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center animate-pulse">
+                                    <i class="fas fa-laptop-code text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Frontend Development</h4>
+                                    <p class="text-gray-400 text-sm">React, Vue.js, Modern CSS</p>
+                                </div>
                             </div>
-                            <div class="skills__bar skills__html">
-
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center animate-pulse">
+                                    <i class="fas fa-server text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Backend Development</h4>
+                                    <p class="text-gray-400 text-sm">Node.js, Python, Database Design</p>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center animate-pulse">
+                                    <i class="fas fa-mobile-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Mobile Development</h4>
+                                    <p class="text-gray-400 text-sm">React Native, Flutter</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 morphing-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Skills & Technologies</h2>
+                <div class="w-24 h-1 bg-white mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Skills -->
+                <div class="glass rounded-2xl p-6 card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-spin-slow">
+                            <i class="fab fa-react text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Frontend</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>React.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>CSS/Tailwind</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Solo Projects</h2>
-                <div class="work__container bd-grid">
-                    <a href="https://projectx0616.github.io/" class="work__img">
-                        <img src="assets/img/portfolio.jpg" alt="">
-                    </a>
-                    
-                    <!-- Add more solo projects here if needed -->
+                <!-- Backend Skills -->
+                <div class="glass rounded-2xl p-6 card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce-slow">
+                            <i class="fas fa-server text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Backend</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>MongoDB</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-            <section class="work section" id="group-projects">
-                <h2 class="section-title">Group Projects</h2>
-                <div class="work__container bd-grid">
-                    <a href="https://projectx0616.github.io/" class="work__img">
-                        <img src="/assets/img/farandaway.jpg" alt="">
-                    </a>
+                <!-- Tools & Others -->
+                <div class="glass rounded-2xl p-6 card-hover md:col-span-2 lg:col-span-1">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-wiggle">
+                            <i class="fas fa-tools text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Tools & Others</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Git/GitHub</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-purple-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Docker</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>AWS</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2 skill-bar">
+                                <div class="bg-orange-500 h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Featured Projects</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="glass rounded-2xl overflow-hidden card-hover group">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-shopping-cart text-6xl text-white group-hover:scale-110 transition-transform"></i>
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-400 mb-4">Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin panel.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded text-sm">React</span>
+                            <span class="bg-green-500/20 text-green-400 px-2 py-1 rounded text-sm">Node.js</span>
+                            <span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded text-sm">MongoDB</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="#" class="text-purple-400 hover:text-purple-300 transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                <!-- Project 2 -->
+                <div class="glass rounded-2xl overflow-hidden card-hover group">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-tasks text-6xl text-white group-hover:scale-110 transition-transform"></i>
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                        <p class="text-gray-400 mb-4">Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded text-sm">React</span>
+                            <span class="bg-purple-500/20 text-purple-400 px-2 py-1 rounded text-sm">Socket.io</span>
+                            <span class="bg-red-500/20 text-red-400 px-2 py-1 rounded text-sm">Redis</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="#" class="text-purple-400 hover:text-purple-300 transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass rounded-2xl overflow-hidden card-hover group">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-chart-line text-6xl text-white group-hover:scale-110 transition-transform"></i>
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Analytics Dashboard</h3>
+                        <p class="text-gray-400 mb-4">Interactive data visualization dashboard with real-time charts, filters, and comprehensive reporting capabilities for business insights.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 px-2 py-1 rounded text-sm">Vue.js</span>
+                            <span class="bg-green-500/20 text-green-400 px-2 py-1 rounded text-sm">D3.js</span>
+                            <span class="bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-sm">Python</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="#" class="text-purple-400 hover:text-purple-300 transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 hero-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-white mx-auto mb-4"></div>
+                <p class="text-xl text-white/80">Ready to work together? Let's create something amazing!</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <div class="flex items-center space-x-4 group">
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-all">
+                            <i class="fas fa-envelope text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Email</h3>
+                            <p class="text-white/80">nityanshu.ranawat@example.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 group">
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-all">
+                            <i class="fas fa-phone text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Phone</h3>
+                            <p class="text-white/80">+91 12345 67890</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 group">
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center group-hover:bg-white/30 transition-all">
+                            <i class="fas fa-map-marker-alt text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Location</h3>
+                            <p class="text-white/80">India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl p-8">
+                    <form class="space-y-6" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <input type="text" placeholder="Your Name" required 
+                                   class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" required 
+                                   class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Subject" required 
+                                   class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="4" required 
+                                      class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none"></textarea>
+                        </div>
+                        <button type="submit" 
+                                class="w-full bg-white text-gray-900 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-all transform hover:scale-105 animate-glow">
+                            Send Message
+                        </button>
                     </form>
                 </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Nityanshu Ranawat</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Nityanshu. All rigths reserved</p>
-        </footer>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 border-t border-gray-700">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold gradient-text mb-4">Nityanshu Ranawat</h3>
+                <div class="flex justify-center space-x-6 mb-4">
+                    <a href="https://www.facebook.com/nityanshu.ranawat.7" 
+                       class="text-2xl hover:text-blue-500 transition-colors duration-300 transform hover:scale-110">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rana_ji__31/" 
+                       class="text-2xl hover:text-pink-400 transition-colors duration-300 transform hover:scale-110">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" 
+                       class="text-2xl hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nityanshu-ranawat/" 
+                       class="text-2xl hover:text-blue-600 transition-colors duration-300 transform hover:scale-110">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:nityanshu.ranawat@example.com" 
+                       class="text-2xl hover:text-red-400 transition-colors duration-300 transform hover:scale-110">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Nityanshu Ranawat. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 right-8 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-all transform hover:scale-110 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
 
-    </body>
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const name = formData.get('name') || event.target.querySelector('input[placeholder="Your Name"]').value;
+            const email = formData.get('email') || event.target.querySelector('input[placeholder="Your Email"]').value;
+            const subject = formData.get('subject') || event.target.querySelector('input[placeholder="Subject"]').value;
+            const message = formData.get('message') || event.target.querySelector('textarea[placeholder="Your Message"]').value;
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitBtn = event.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Thank you for your message! I\'ll get back to you soon.');
+                event.target.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animations
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Typing effect for hero section
+        const heroText = document.querySelector('#home h1');
+        if (heroText) {
+            const text = heroText.innerHTML;
+            heroText.innerHTML = '';
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < text.length) {
+                    heroText.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            
+            // Start typing effect after page load
+            window.addEventListener('load', () => {
+                setTimeout(typeWriter, 1000);
+            });
+        }
+
+        // Particle effect for hero section
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'absolute w-2 h-2 bg-white/20 rounded-full animate-float';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 6 + 's';
+            particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+            
+            const heroSection = document.querySelector('#home');
+            if (heroSection) {
+                heroSection.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 8000);
+            }
+        }
+
+        // Create particles periodically
+        setInterval(createParticle, 2000);
+
+        // Skill bar animations
+        const skillBars = document.querySelectorAll('.skill-bar div');
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    const width = bar.style.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.transition = 'width 2s ease-out';
+                        bar.style.width = width;
+                    }, 200);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        skillBars.forEach(bar => {
+            skillObserver.observe(bar);
+        });
+
+        // Add hover effects to project cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px) rotateX(5deg) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) rotateX(0) scale(1)';
+            });
+        });
+
+        // Dynamic gradient background
+        let gradientAngle = 0;
+        function updateGradient() {
+            gradientAngle += 0.5;
+            const heroSection = document.querySelector('#home');
+            if (heroSection) {
+                heroSection.style.background = `linear-gradient(${gradientAngle}deg, #667eea 0%, #764ba2 100%)`;
+            }
+        }
+
+        setInterval(updateGradient, 100);
+
+        // Preloader
+        window.addEventListener('load', () => {
+            const preloader = document.createElement('div');
+            preloader.className = 'fixed inset-0 bg-gray-900 flex items-center justify-center z-50';
+            preloader.innerHTML = `
+                <div class="text-center">
+                    <div class="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                    <p class="text-white text-lg">Loading...</p>
+                </div>
+            `;
+            
+            document.body.appendChild(preloader);
+            
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                preloader.style.transition = 'opacity 0.5s ease-out';
+                setTimeout(() => {
+                    preloader.remove();
+                }, 500);
+            }, 1000);
+        });
+    </script>
+</body>
 </html>
