@@ -323,3 +323,11 @@ I'm a passionate **Computer Science Engineering student** at Parul University wi
 
 <div align="center">
 
+const funFacts = {
+🎵 music: "Coding with Lo-fi beats",
+☕ fuel: "Coffee and determination",
+🌙 codingTime: "Night owl developer",
+🎮 hobby: "Building games in spare time",
+📚 learning: "Always exploring new technologies",
+🌟 motto: "Code today, change tomorrow!"
+};
