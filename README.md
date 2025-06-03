@@ -1,294 +1,325 @@
-# <div align="center">🌌 Welcome to Nityanshu's Digital Cosmos 🌌</div>
-
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=Nityanshu%20Ranawat&fontSize=50&fontAlignY=40&desc=Full-Stack%20Developer%20%7C%20AI%20Enthusiast%20%7C%20Problem%20Solver&descAlignY=60&descAlign=50" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=300&section=header&text=Nityanshu%20Ranawat&fontSize=50&fontAlignY=40&desc=Full-Stack%20Developer%20%7C%20Problem%20Solver%20%7C%20Innovation%20Enthusiast&descAlignY=60&descAlign=50&fontColor=ffffff" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=%F0%9F%9A%80+Crafting+Digital+Experiences;%F0%9F%A4%96+AI+%7C+Blockchain+%7C+Full-Stack;%F0%9F%8C%9F+Building+Tomorrow's+Solutions+Today!" alt="Animated Typing" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=667EEA&center=true&vCenter=true&width=800&height=80&lines=🚀+Building+Scalable+Web+Solutions;💡+MERN+Stack+%7C+Python+%7C+Flutter;🏆+Hackathon+Winner+%7C+Problem+Solver" alt="Typing Animation" />
 </div>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=nityanshu31&style=for-the-badge&color=00d9ff&label=COSMIC+VISITORS" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/nityanshu31?style=for-the-badge&color=ff6b35&label=STELLAR+FOLLOWERS" alt="Followers" />
-  <img src="https://img.shields.io/github/stars/nityanshu31?style=for-the-badge&color=ffd23f&label=GITHUB+STARS" alt="Stars" />
+  <img src="https://komarev.com/ghpvc/?username=nityanshu31&style=flat-square&color=667eea&label=Profile+Views" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/nityanshu31?style=flat-square&color=764ba2&label=Followers" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/nityanshu31?style=flat-square&color=f093fb&label=Total+Stars" alt="Stars" />
 </p>
 
 ---
 
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> <span style="color: #00D9FF;">About Me - The Human Behind The Code</span>
+## 👨‍💻 About Me
 
-<div align="center">
-  <img align="right" alt="Coding GIF" width="400" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
-</div>
+I'm a passionate **Computer Science Engineering student** at Parul University with a strong foundation in full-stack development. My journey in tech is driven by a desire to create impactful solutions that solve real-world problems.
 
-```javascript
-class NityanshuRanawat {
-    constructor() {
-        this.name = "Nityanshu Ranawat";
-        this.location = "Vadodara, Gujarat, India 🇮🇳";
-        this.title = "Full-Stack Developer & Innovation Architect";
-        this.company = "Building the Future";
-        this.dailyRoutine = ["☕ Coffee", "💻 Code", "🧠 Learn", "🚀 Innovate"];
-        this.currentlyWorking = "Emergency Coordination Platform";
-        this.currentlyLearning = ["Advanced AI/ML", "Cloud Architecture", "Web3"];
-    }
+**🎯 Current Focus:** Building scalable web applications with modern technologies  
+**🏆 Achievement:** Winner of Vadodara Hackathon 5.0 with Relief Bridge platform  
+**📍 Location:** Vadodara, Gujarat, India  
+**🎓 Education:** B.Tech CSE (Expected 2026) | CGPA: 7.61  
 
-    getPassions() {
-        return [
-            "🌐 Building scalable web applications",
-            "🤖 Integrating AI into real-world solutions", 
-            "♿ Creating accessible technology for everyone",
-            "🔗 Exploring blockchain and decentralization",
-            "🎮 Experimenting with interactive experiences"
-        ];
-    }
-
-    getLifePhilosophy() {
-        return "Code is poetry, bugs are just plot twists! 🎭";
-    }
-
-    workInProgress() {
-        while(this.isAwake()) {
-            this.code();
-            this.debug();
-            this.innovate();
-            this.repeat();
-        }
-    }
-}
-
-const developer = new NityanshuRanawat();
-console.log(developer.getPassions());
-```
-
-<div align="center">
-  <img src="https://spotify-github-profile.vercel.app/api/spotify-playing" alt="Nityanshu's Spotify" />
-</div>
 
 ---
 
-## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="35"> <span style="color: #FF6B35;">My Digital Toolbox</span>
+## 🛠️ Tech Stack & Skills
 
 <div align="center">
 
-### 🎨 **Frontend Magic**
-<p>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,js,ts,html,css,tailwind,sass,bootstrap,redux" alt="Frontend" />
-</p>
+### **Languages**
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-### ⚡ **Backend Wizardry**  
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs,python,flask,express,fastapi,mongodb,mysql,postgresql,redis" alt="Backend" />
-</p>
+### **Frontend Development**
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-### 🚀 **DevOps & Cloud**
-<p>
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,vercel,netlify,heroku,nginx" alt="DevOps" />
-</p>
+### **Backend Development**
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 
-### 🛠️ **Tools & Platforms**
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,postman,linux,bash" alt="Tools" />
-</p>
+### **Database & Cloud**
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-### 🔮 **Currently Mastering**
-<p>
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,solidity,threejs,graphql,prisma" alt="Learning" />
-</p>
+### **Mobile Development**
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+### **Tools & Technologies**
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 </div>
 
 ---
 
-## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> <span style="color: #FFD23F;">Featured Projects - My Digital Creations</span>
+## 🚀 Featured Projects
 
 <div align="center">
-  <table>
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=nityanshu31&repo=emergency-coordination-platform&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&icon_color=FF6B35" alt="Project 1" />
-        <br><br>
-        <h3>🚨 Emergency Coordination Platform</h3>
-        <p><em>AI-powered emergency response system with real-time coordination</em></p>
-        <p>
-          <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-          <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-          <img src="https://img.shields.io/badge/AI/ML-FF6B35?style=flat-square&logo=tensorflow&logoColor=white" />
-        </p>
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=nityanshu31&repo=accessibility-navigator&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&icon_color=FF6B35" alt="Project 2" />
-        <br><br>
-        <h3>👁️ Accessibility Navigator</h3>
-        <p><em>Camera-based navigation system for visually impaired users</em></p>
-        <p>
-          <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-          <img src="https://img.shields.io/badge/Computer_Vision-FF6B35?style=flat-square&logo=opencv&logoColor=white" />
-          <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-        </p>
-      </td>
-    </tr>
-  </table>
-</div>
+
+### 🏆 **Relief Bridge: Emergency Coordination Platform**
+*Winner - Vadodara Hackathon 5.0*
+
+**A scalable MERN stack platform for emergency response coordination**
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-404D59?style=flat-square)
+
+- 🔐 Implemented secure JWT-based authentication system
+- 🎨 Built responsive UI with seamless user experience
+- 🤝 Led cross-functional team of 6 members using Agile methodologies
+- ☁️ Deployed on cloud with scalable architecture
+- 🚨 Real-time emergency alert system with geolocation
+- 📊 Admin dashboard for resource management
+
+[🔗 Live Demo](https://relief-bridge.vercel.app) | [📁 Source Code](https://github.com/nityanshu31/relief-bridge)
 
 ---
 
-## <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="35"> <span style="color: #00D9FF;">GitHub Analytics Dashboard</span>
+### 📈 **Stock AI Predictor: Financial Analytics Platform**
 
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=nityanshu31&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&icon_color=FF6B35" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nityanshu31&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF" alt="Top Languages" />
-</div>
+**Comprehensive stock and cryptocurrency prediction application**
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nityanshu31&theme=tokyonight&hide_border=true&background=0D1117&ring=00D9FF&fire=FF6B35&currStreakLabel=FFFFFF" alt="GitHub Streak" />
-</div>
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nityanshu31&bg_color=0D1117&color=FFFFFF&line=00D9FF&point=FF6B35&area=true&hide_border=true&custom_title=Contribution%20Graph" alt="GitHub Activity Graph" />
-</div>
+- 🤖 Built algorithmic forecasting models for market prediction
+- 🔄 Integrated real-time market data through external APIs
+- 📊 Developed interactive data visualization components
+- 🎯 Implemented robust RESTful APIs with Python Flask
+- 📈 Machine learning models for price prediction
+- 💹 Portfolio tracking and analysis features
 
----
-
-## <img src="https://media.giphy.com/media/QssGEmpSoAreOjvbbl/giphy.gif" width="35"> <span style="color: #FF6B35;">Achievement Gallery</span>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nityanshu31&theme=onedark&no-frame=true&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=nityanshu31&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF" alt="Wakatime Stats" />
-</div>
+[🔗 Live Demo](https://stock-ai-predictor.vercel.app) | [📁 Source Code](https://github.com/nityanshu31/stock-ai-predictor)
 
 ---
 
-## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35"> <span style="color: #FFD23F;">When I'm Not Coding...</span>
+### 🔗 **Link Shortener: URL Management Service**
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="25%">
-        <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="100px"><br>
-        <b>🎮 Gaming</b><br>
-        <sub>Strategy & Puzzle Games</sub>
-      </td>
-      <td align="center" width="25%">
-        <img src="https://media.giphy.com/media/WoWm8YzFQJg5i/giphy.gif" width="100px"><br>
-        <b>📚 Learning</b><br>
-        <sub>AI/ML Research Papers</sub>
-      </td>
-      <td align="center" width="25%">
-        <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" width="100px"><br>
-        <b>🎵 Music</b><br>
-        <sub>Lo-fi & Electronic</sub>
-      </td>
-      <td align="center" width="25%">
-        <img src="https://media.giphy.com/media/scZPhLqaVOM1qG4lT9/giphy.gif" width="100px"><br>
-        <b>🌱 Mentoring</b><br>
-        <sub>Helping New Developers</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+**Scalable URL shortening service with custom algorithms**
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)
+
+- ⚡ Developed custom URL shortening algorithms
+- 🗄️ Optimized database schema for efficient query performance
+- 🎨 Built clean, responsive user interface
+- 🔧 Implemented comprehensive testing and debugging
+- 📊 Click analytics and tracking system
+- 🔒 Custom URL validation and security measures
+
+[📁 Source Code](https://github.com/nityanshu31/link-shortener)
 
 ---
 
-## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="25"> <span style="color: #00D9FF;">My Coding Stats</span>
+### 🌍 **Far and Away: Tourism Platform**
 
-<div align="center">
-  
-```text
-💻 Operating Systems:
-Linux           ███████████████████░   85.2%
-Windows         ████░░░░░░░░░░░░░░░░░   12.1%
-macOS           █░░░░░░░░░░░░░░░░░░░░    2.7%
+**User-friendly web platform for tourism experiences**
 
-💡 IDE:
-VS Code         ████████████████████   92.3%
-PyCharm         ██░░░░░░░░░░░░░░░░░░░    5.8%
-Vim             █░░░░░░░░░░░░░░░░░░░░    1.9%
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)
 
-⌚ Time Zone: Asia/Kolkata (GMT+5:30)
-🔥 Most Productive Time: 🌙 Night Owl (10 PM - 2 AM)
-```
+- 🎨 Designed intuitive and responsive user interface
+- 🚀 Implemented interactive frontend components
+- 👥 Received positive user feedback for UX design
+- 📱 Built with mobile-first responsive approach
+- 🗺️ Interactive maps and location services
+- 💳 Booking system with payment integration
+
+[🔗 Live Demo](https://far-and-away.vercel.app) | [📁 Source Code](https://github.com/nityanshu31/far-and-away)
+
+---
+
+### 📱 **Additional Projects**
+
+**🎮 Tic Tac Toe Game** - Interactive game with AI opponent  
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+
+**🧮 Calculator App** - Scientific calculator with advanced functions  
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
 </div>
 
 ---
 
-## <img src="https://media.giphy.com/media/QssGEmpSoAreOjvbbl/giphy.gif" width="35"> <span style="color: #FF6B35;">Let's Connect & Build Something Amazing!</span>
+## 📊 GitHub Analytics
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=nityanshu31&show_icons=true&theme=gradient&include_all_commits=true&count_private=true&hide_border=true&bg_color=30,667eea,764ba2&title_color=fff&text_color=fff&icon_color=fff" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nityanshu31&layout=compact&theme=gradient&hide_border=true&bg_color=30,667eea,764ba2&title_color=fff&text_color=fff" alt="Top Languages" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nityanshu31&theme=gradient&hide_border=true&background=30,667eea,764ba2&ring=fff&fire=fff&currStreakLabel=fff&sideLabels=fff&dates=fff&sideNums=fff&currStreakNum=fff" alt="GitHub Streak" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nityanshu31&theme=react-dark&hide_border=true&bg_color=30,667eea,764ba2&color=fff&line=fff&point=fff" alt="Contribution Graph" />
+</div>
+
+---
+
+## 🏆 Achievements & Recognition
 
 <div align="center">
 
-### 🌐 **Find Me Across The Digital Universe**
-
-<p>
-<a href="https://linkedin.com/in/nityanshu-ranawat"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5" /></a>
-<a href="https://twitter.com/nityanshu31"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=1DA1F2" /></a>
-<a href="https://instagram.com/nityanshu31"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=E4405F" /></a>
-<a href="mailto:nityanshu.ranawat@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836" /></a>
-</p>
-
-<p>
-<a href="https://dev.to/nityanshu31"><img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white&labelColor=0A0A0A" /></a>
-<a href="https://medium.com/@nityanshu31"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white&labelColor=12100E" /></a>
-<a href="https://stackoverflow.com/users/nityanshu31"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white&labelColor=FE7A16" /></a>
-<a href="https://discord.gg/nityanshu31"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white&labelColor=7289DA" /></a>
-</p>
-
-### 💰 **Support My Journey**
-<p>
-<a href="https://buymeacoffee.com/nityanshu31"><img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black&labelColor=FFDD00" /></a>
-<a href="https://ko-fi.com/nityanshu31"><img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white&labelColor=F16061" /></a>
-<a href="https://patreon.com/nityanshu31"><img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white&labelColor=F96854" /></a>
-</p>
+| 🏅 Achievement | 🎯 Event | 📅 Year | 🎖️ Recognition |
+|-------------|-------|------|-------------|
+| 🥇 **Winner** | Vadodara Hackathon 5.0 | 2024 | Emergency Platform Development |
+| 🏅 **Top 5** | HEREVolution Hackathon - BITS Pilani | 2024 | Location-based Services Innovation |
+| 🎓 **Elite Certification** | NPTEL - Computer Networks | 2024 | Score: 67/100 |
+| 📜 **Certification** | Infosys Springboard - Database & SQL | 2023 | Database Management |
+| 🌐 **Certification** | Cisco Networking Academy - IoT | 2024 | Internet of Things |
 
 </div>
 
 ---
 
-## <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="35"> <span style="color: #FFD23F;">Random Dev Wisdom</span>
+## 📜 Certifications & Education
+
+### 🎓 **Education**
+**Bachelor of Technology - Computer Science Engineering**  
+*Parul University, Vadodara* | *2022 - 2026* | *CGPA: 7.61*
+
+### 📚 **Certifications**
+
+**🎓 Computer Networks and Internet Protocol** - NPTEL, IIT Kharagpur (2024)  
+*Elite Certification with 67/100 score*
+
+**🗄️ Database and SQL Programming** - Infosys Springboard (2023)  
+*Comprehensive database design and optimization*
+
+**🌐 Introduction to Internet of Things** - Cisco Networking Academy (2024)  
+*IoT systems and digital transformation*
+
+**💻 Programming Fundamentals** - Various Platforms (2022-2024)  
+*JavaScript, Python, Java, C++ certifications*
+
+---
+
+## 💼 Experience & Skills
+
+### **🔧 Technical Skills**
+- **Frontend:** React.js, HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS
+- **Backend:** Node.js, Express.js, Python Flask, RESTful APIs
+- **Database:** MongoDB, MySQL, Database Design & Optimization
+- **Mobile:** Flutter, React Native, Cross-platform Development
+- **Cloud & DevOps:** AWS, Vercel, Git, Linux, Deployment Strategies
+- **Tools:** Postman, JWT Authentication, Version Control
+
+### **🎯 Soft Skills**
+- Team Leadership & Project Management
+- Agile Development Methodologies
+- Problem Solving & Critical Thinking
+- Communication & Collaboration
+- Time Management & Organization
+
+---
+
+## 🏃‍♂️ Competitive Programming
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&border=true&quote=Code%20is%20like%20humor.%20When%20you%20have%20to%20explain%20it,%20it's%20bad.&author=Cory%20House" alt="Dev Quote" />
+
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/nityanshu31)
+[![HackerRank](https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white)](https://hackerrank.com/nityanshu31)
+[![CodeChef](https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://codechef.com/users/nityanshu31)
+
+**🎯 Problem Solving Stats:**
+- 💡 150+ Problems Solved across platforms
+- 🏆 Regular participation in coding contests
+- 📈 Consistent improvement in algorithmic thinking
+
 </div>
 
 ---
 
-## <img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="35"> <span style="color: #00D9FF;">Fun Facts About Me</span>
+## 🤝 Let's Connect
 
 <div align="center">
 
-```yaml
-fun_facts:
-  - "🌙 I'm a night owl - my best code happens after midnight"
-  - "☕ Coffee addiction level: Senior Developer"
-  - "🐛 I name my bugs like pets before fixing them"
-  - "🎵 I code better with lo-fi hip hop in the background"
-  - "🚀 My rubber duck debugging partner is named Newton"
-  - "📱 I have 47 programming podcasts subscribed"
-  - "🎮 I learned programming to mod my favorite video games"
-```
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nityanshu-ranawat)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nityanshu31)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/nityanshu31)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://nityanshu-portfolio.vercel.app)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ranawatnityanshu31@gmail.com)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/nityanshu31)
+
+**📱 Phone:** +91-7877640913  
+**📍 Location:** Vadodara, Gujarat, India  
+**🌐 Website:** [nityanshu-portfolio.vercel.app](https://nityanshu-portfolio.vercel.app)
 
 </div>
 
 ---
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=footer&text=Thanks%20for%20exploring%20my%20universe!&fontSize=20&fontAlignY=70&animation=twinkling&fontColor=gradient" />
-</div>
+## 💭 Current Goals & Future Vision
+
+### **🎯 Short-term Goals (2025)**
+- 🚀 Master advanced cloud technologies (AWS, Docker, Kubernetes)
+- 📱 Build and deploy 3 major full-stack applications
+- 🏆 Participate in 5+ hackathons and coding competitions
+- 📚 Complete advanced certifications in DevOps and Cloud Computing
+
+### **🌟 Medium-term Goals (2025-2026)**
+- 🤝 Contribute to 10+ major open-source projects
+- 💼 Secure internship at top tech companies
+- 🎓 Graduate with distinction in Computer Science Engineering
+- 🌍 Build a product that impacts 1000+ users
+
+### **🚀 Long-term Vision (2026+)**
+- 🏢 Join a leading tech company as a Full-Stack Developer
+- 🌟 Build products that impact millions of users globally
+- 👨‍🏫 Mentor upcoming developers and contribute to tech education
+- 🚀 Start my own tech venture focused on social impact
+
+---
+
+## 📈 Activity & Contributions
 
 <div align="center">
 
-### 🚀 **"The best way to predict the future is to invent it."** - Alan Kay
+### **🔥 Recent Activity**
+- 🚀 Currently working on: **Advanced E-commerce Platform**
+- 📚 Learning: **Docker & Kubernetes for DevOps**
+- 🎯 Next Project: **AI-powered Chat Application**
+- 🏆 Latest Achievement: **Vadodara Hackathon 5.0 Winner**
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=⭐+Star+my+repos+if+you+find+them+interesting!;🤝+Always+open+to+collaboration!;📫+Let's+build+something+amazing+together!" alt="Footer Message" />
+### **📊 2024 Highlights**
+- ✅ 4 Major Projects Completed
+- 🏆 2 Hackathon Participations (1 Win)
+- 📜 3 Professional Certifications Earned
+- 🤝 50+ GitHub Contributions
 
 </div>
 
 ---
 
+## 🎨 Fun Facts About Me
+
 <div align="center">
-  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-</div>
+
